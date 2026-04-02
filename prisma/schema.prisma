@@ -1,0 +1,112 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id            String    @id @default(cuid())
+  clerkId       String    @unique
+  email         String    @unique
+  name          String?
+  role          String    @default("USER") // Using String for role since SQLite doesn't support enums natively
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  orders        Order[]
+  cart          Cart?
+  comments      Comment[]
+  reviews       Review[]
+  activities    UserActivity[]
+}
+
+model Product {
+  id            String    @id @default(cuid())
+  name          String
+  description   String
+  price         Float
+  category      String
+  stock         Int
+  specifications String    // Storing JSON as string for better SQLite compatibility
+  images        String    // Storing JSON-stringified array of image URLs
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  comments      Comment[]
+  reviews       Review[]
+  orderItems    OrderItem[]
+  cartItems     CartItem[]
+}
+
+model Comment {
+  id            String    @id @default(cuid())
+  content       String
+  userId        String
+  productId     String
+  createdAt     DateTime  @default(now())
+  user          User      @relation(fields: [userId], references: [id])
+  product       Product   @relation(fields: [productId], references: [id])
+}
+
+model Review {
+  id            String    @id @default(cuid())
+  rating        Int       // 1-5
+  userId        String
+  productId     String
+  createdAt     DateTime  @default(now())
+  user          User      @relation(fields: [userId], references: [id])
+  product       Product   @relation(fields: [productId], references: [id])
+}
+
+model Cart {
+  id            String    @id @default(cuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  items         CartItem[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model CartItem {
+  id            String    @id @default(cuid())
+  quantity      Int
+  productId     String
+  cartId        String
+  product       Product   @relation(fields: [productId], references: [id])
+  cart          Cart      @relation(fields: [cartId], references: [id])
+}
+
+model Order {
+  id            String    @id @default(cuid())
+  userId        String
+  razorpayOrderId String  @unique
+  razorpayPaymentId String?
+  amount        Float
+  status        String    @default("PENDING") // Enum fallback
+  items         OrderItem[]
+  shippingAddress String  // Store JSON-stringified address
+  receipt       String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          User      @relation(fields: [userId], references: [id])
+}
+
+model OrderItem {
+  id            String    @id @default(cuid())
+  orderId       String
+  productId     String
+  quantity      Int
+  price         Float
+  order         Order     @relation(fields: [orderId], references: [id])
+  product       Product   @relation(fields: [productId], references: [id])
+}
+
+model UserActivity {
+  id            String    @id @default(cuid())
+  userId        String
+  action        String    // 'view', 'purchase', 'add_to_cart', 'comment', 'review'
+  productId     String?
+  details       String?   // JSON fallback
+  createdAt     DateTime  @default(now())
+  user          User      @relation(fields: [userId], references: [id])
+}
