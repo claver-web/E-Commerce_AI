@@ -6,6 +6,9 @@ const adapter = new PrismaBetterSqlite3({ url: dbPath });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
+  // Clear existing products to avoid duplicates
+  await prisma.product.deleteMany();
+
   const products = [
     {
       name: "iPhone 15 Pro Max",
@@ -19,8 +22,8 @@ async function main() {
         { key: "Chip", value: "A17 Pro" }
       ]),
       images: JSON.stringify([
-        "https://images.unsplash.com/photo-1695048133142-1a20484d2524?auto=format&fit=crop&q=80&w=1000",
-        "https://images.unsplash.com/photo-1695048132961-0d2948680072?auto=format&fit=crop&q=80&w=1000"
+        "https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&q=80&w=1000",
+        "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&q=80&w=1000"
       ]),
     },
     {
@@ -50,7 +53,7 @@ async function main() {
         { key: "Lining", value: "Silk" }
       ]),
       images: JSON.stringify([
-        "https://images.unsplash.com/photo-1551028711-03057e49514e?auto=format&fit=crop&q=80&w=1000"
+        "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?auto=format&fit=crop&q=80&w=1000"
       ]),
     },
     {
@@ -65,7 +68,7 @@ async function main() {
         { key: "Bulb", value: "LED E27" }
       ]),
       images: JSON.stringify([
-        "https://images.unsplash.com/photo-1534073828943-f801091bb18c?auto=format&fit=crop&q=80&w=1000"
+        "https://images.unsplash.com/photo-1507473885765-e6ed457f7d1f?auto=format&fit=crop&q=80&w=1000"
       ]),
     },
   ];

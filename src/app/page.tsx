@@ -40,7 +40,7 @@ export default function HomePage() {
               initial={{ scale: 1.2, opacity: 0 }}
               animate={{ scale: 1, opacity: 0.6 }}
               transition={{ duration: 1.5 }}
-              className="h-full w-full"
+              className="relative h-full w-full"
             >
               <Image
                 src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=2070"
@@ -145,6 +145,7 @@ export default function HomePage() {
                     src={cat.img}
                     alt={cat.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-all duration-500" />

@@ -99,6 +99,35 @@ export default function CheckoutPage() {
 
           if (verifyRes.ok) {
             toast.success("Payment successful!");
+            
+            // 4. Generate and Download Invoice
+            try {
+              const invoiceRes = await fetch("/api/generate-invoice", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  razorpay_order_id: response.razorpay_order_id,
+                  razorpay_payment_id: response.razorpay_payment_id,
+                  razorpay_signature: response.razorpay_signature,
+                }),
+              });
+
+              if (invoiceRes.ok) {
+                const blob = await invoiceRes.blob();
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = `Invoice-${orderData.orderId.slice(-8)}.pdf`;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url);
+                toast.success("Invoice downloaded!");
+              }
+            } catch (error) {
+              console.error("Failed to auto-download invoice:", error);
+            }
+
             clearCart();
             router.push(`/order-success?orderId=${orderData.dbOrderId}`);
           } else {
@@ -214,6 +243,7 @@ export default function CheckoutPage() {
                           src={item.image || "/placeholder.jpg"} 
                           alt={item.name} 
                           fill 
+                          sizes="48px"
                           className="object-contain p-1" 
                         />
                       </div>

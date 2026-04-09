@@ -29,6 +29,8 @@ import { useCartStore } from "@/store/use-cart-store";
 import Navbar from "@/components/shared/navbar";
 import Footer from "@/components/shared/footer";
 import { toast } from "react-hot-toast";
+import { ReviewSection } from "@/components/products/review-section";
+import { CommentSection } from "@/components/products/comment-section";
 
 export default function ProductDetailsPage() {
   const params = useParams();
@@ -44,10 +46,19 @@ export default function ProductDetailsPage() {
       try {
         const res = await fetch(`/api/products/${params.id}`);
         const data = await res.json();
+        
+        if (data.error || !data) {
+          throw new Error(data.error || "Product not found");
+        }
+        
         setProduct(data);
-        setMainImage(JSON.parse(data.images)[0]);
+        
+        if (data.images) {
+          const parsedImages = JSON.parse(data.images);
+          setMainImage(parsedImages[0] || "");
+        }
       } catch (e) {
-        console.error("Failed to fetch product");
+        console.error("Failed to fetch product:", e);
       } finally {
         setLoading(false);
       }
@@ -58,8 +69,8 @@ export default function ProductDetailsPage() {
   if (loading) return <div>Loading...</div>;
   if (!product) return <div>Product not found</div>;
 
-  const images = JSON.parse(product.images);
-  const specs = JSON.parse(product.specifications);
+  const images = product.images ? JSON.parse(product.images) : [];
+  const specs = product.specifications ? JSON.parse(product.specifications) : [];
 
   const handleAddToCart = () => {
     addItem(product, quantity);
@@ -83,6 +94,8 @@ export default function ProductDetailsPage() {
                 src={mainImage}
                 alt={product.name}
                 fill
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
                 className="object-contain p-8 transition-all hover:scale-110"
               />
             </div>
@@ -95,7 +108,7 @@ export default function ProductDetailsPage() {
                     mainImage === img ? "border-blue-600 scale-105" : "border-transparent opacity-70 hover:opacity-100"
                   }`}
                 >
-                  <Image src={img} alt={`${product.name} ${idx}`} fill className="object-cover" />
+                  <Image src={img} alt={`${product.name} ${idx}`} fill sizes="(max-width: 768px) 25vw, 15vw" className="object-cover" />
                 </button>
               ))}
             </div>
@@ -196,42 +209,17 @@ export default function ProductDetailsPage() {
                   </table>
                 </div>
               </TabsContent>
-              <TabsContent value="reviews" className="space-y-6">
-                <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-xl font-bold">What Users Say</h3>
-                  <Button variant="outline" size="sm">Write a Review</Button>
-                </div>
-                <div className="space-y-6">
-                  {/* Mock Reviews */}
-                  {[1, 2].map((i) => (
-                    <Card key={i} className="border-none shadow-sm rounded-2xl">
-                      <CardContent className="p-6 space-y-4">
-                        <div className="flex justify-between items-start">
-                          <div className="flex items-center space-x-3">
-                            <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-600 text-sm">
-                              JS
-                            </div>
-                            <div>
-                              <p className="text-sm font-bold">John Smith</p>
-                              <div className="flex mt-1">
-                                {[...Array(5)].map((_, s) => (
-                                  <Star key={s} className="h-3 w-3 fill-yellow-400 text-yellow-400" />
-                                ))}
-                              </div>
-                            </div>
-                          </div>
-                          <span className="text-xs text-muted-foreground">March 24, 2024</span>
-                        </div>
-                        <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                          Absolutely amazing product! The build quality is top-notch and the performance exceeded my expectations. Shipping was also incredibly fast.
-                        </p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+              <TabsContent value="reviews" className="space-y-6 pt-12">
+                <ReviewSection productId={params.id as string} />
               </TabsContent>
             </Tabs>
           </div>
+        </div>
+
+        <Separator className="my-24" />
+
+        <div className="max-w-4xl mx-auto pb-24">
+          <CommentSection productId={params.id as string} />
         </div>
       </main>
 

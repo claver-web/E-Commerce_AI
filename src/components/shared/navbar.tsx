@@ -60,6 +60,17 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+          {userId && (
+            <Link
+              href="/orders"
+              className={cn(
+                "transition-colors hover:text-foreground/80",
+                pathname === "/orders" ? "text-foreground" : "text-foreground/60"
+              )}
+            >
+              Orders
+            </Link>
+          )}
         </nav>
 
         {/* Desktop Controls */}
@@ -134,6 +145,17 @@ export default function Navbar() {
                       {link.name}
                     </Link>
                   ))}
+                  {userId && (
+                    <Link
+                      href="/orders"
+                      className={cn(
+                        "text-lg font-medium",
+                        pathname === "/orders" ? "text-foreground" : "text-foreground/60"
+                      )}
+                    >
+                      Orders
+                    </Link>
+                  )}
                   <div className="flex flex-col space-y-2 pt-4 border-t">
                     {!userId && (
                       <>

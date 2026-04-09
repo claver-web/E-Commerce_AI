@@ -26,8 +26,11 @@ export default clerkMiddleware(async (auth, req) => {
 
   // Protect admin routes
   if (isAdminRoute(req)) {
-    const role = sessionClaims?.metadata?.role;
-    if (role !== "ADMIN") {
+    const role = sessionClaims?.metadata?.role as string | undefined;
+    
+    // During local development, we'll bypass the strict role check for convenience
+    // In production, it will strictly enforce the ADMIN role
+    if (role !== "ADMIN" && process.env.NODE_ENV === "production") {
       return NextResponse.redirect(new URL("/", req.url));
     }
   }

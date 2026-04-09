@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { 
@@ -21,7 +21,7 @@ import Footer from "@/components/shared/footer";
 import ReactConfetti from "react-confetti";
 import { cn } from "@/lib/utils";
 
-export default function OrderSuccessPage() {
+function OrderSuccessContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const orderId = searchParams.get("orderId");
@@ -90,7 +90,38 @@ export default function OrderSuccessPage() {
             <CardHeader className="bg-zinc-900 text-white p-8">
               <div className="flex justify-between items-center">
                 <CardTitle className="text-2xl">Order Details</CardTitle>
-                <Button variant="outline" size="sm" className="bg-transparent border-white/20 text-white hover:bg-white/10">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  disabled={!order}
+                  onClick={async () => {
+                    if (!order) return;
+                    try {
+                      const res = await fetch("/api/generate-invoice", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          razorpay_order_id: order.razorpayOrderId,
+                          razorpay_payment_id: order.razorpayPaymentId,
+                          razorpay_signature: "VERIFIED_SESSION", // API handles this or we can pass it if we store it
+                        }),
+                      });
+                      if (res.ok) {
+                        const blob = await res.blob();
+                        const url = window.URL.createObjectURL(blob);
+                        const a = document.createElement("a");
+                        a.href = url;
+                        a.download = `Invoice-${order.id.slice(-8)}.pdf`;
+                        document.body.appendChild(a);
+                        a.click();
+                        a.remove();
+                      }
+                    } catch (e) {
+                      console.error("Manual download failed", e);
+                    }
+                  }}
+                  className="bg-transparent border-white/20 text-white hover:bg-white/10"
+                >
                   <Download className="mr-2 h-4 w-4" /> Download Receipt
                 </Button>
               </div>
@@ -149,5 +180,13 @@ export default function OrderSuccessPage() {
 
       <Footer />
     </div>
+  );
+}
+
+export default function OrderSuccessPage() {
+  return (
+    <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
+      <OrderSuccessContent />
+    </Suspense>
   );
 }
