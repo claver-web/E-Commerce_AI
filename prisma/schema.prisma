@@ -23,20 +23,32 @@ model User {
 }
 
 model Product {
-  id            String    @id @default(cuid())
-  name          String
-  description   String
-  price         Float
-  category      String
-  stock         Int
-  specifications String    // Storing JSON as string for better SQLite compatibility
-  images        String    // Storing JSON-stringified array of image URLs
-  createdAt     DateTime  @default(now())
-  updatedAt     DateTime  @updatedAt
-  comments      Comment[]
-  reviews       Review[]
-  orderItems    OrderItem[]
-  cartItems     CartItem[]
+  id              String      @id @default(cuid())
+  name            String
+  description     String
+  price           Float
+  category        String
+  stock           Int
+  specifications  String      // Storing JSON as string for better SQLite compatibility
+  images          String      // Storing JSON-stringified array of image URLs
+  
+  // Amazon Specific Fields
+  amazonId           String?   @unique
+  discountedPrice    Float?
+  actualPrice        Float?
+  discountPercentage String?
+  avgRating          Float?
+  ratingCount        Int?
+  aboutProduct       String?
+  imgLink            String?
+  productLink        String?
+
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  comments        Comment[]
+  reviews         Review[]
+  orderItems      OrderItem[]
+  cartItems       CartItem[]
 }
 
 model Comment {
@@ -53,18 +65,27 @@ model Comment {
 }
 
 model Review {
-  id            String    @id @default(cuid())
-  rating        Int       // 1-5
-  title         String?
-  comment       String
-  isVerified    Boolean   @default(false)
-  userId        String
-  productId     String
-  createdAt     DateTime  @default(now())
-  user          User      @relation(fields: [userId], references: [id])
-  product       Product   @relation(fields: [productId], references: [id])
+  id              String    @id @default(cuid())
+  rating          Float     // Supporting float ratings from Amazon (4.2, etc.)
+  title           String?
+  comment         String
+  isVerified      Boolean   @default(false)
   
-  @@unique([userId, productId], name: "userId_productId") // Prevent duplicate reviews per user/product
+  // Local User (Optional for imported reviews)
+  userId          String?
+  user            User?     @relation(fields: [userId], references: [id])
+  
+  // Amazon Specific Fields
+  amazonReviewId  String?   @unique
+  amazonUserId    String?
+  amazonUserName  String?
+  
+  productId       String
+  product         Product   @relation(fields: [productId], references: [id])
+  
+  createdAt       DateTime  @default(now())
+  
+  @@unique([userId, productId], name: "userId_productId")
 }
 
 model Cart {

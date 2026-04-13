@@ -8,7 +8,8 @@ import {
   LayoutGrid, 
   List, 
   ArrowUpDown,
-  SearchX
+  SearchX,
+  Star
 } from "lucide-react";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -33,6 +34,8 @@ function ProductsContent() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "");
   const [sortBy, setSortBy] = useState("newest");
+  const [minRating, setMinRating] = useState<number | null>(null);
+  const [priceMax, setPriceMax] = useState<number | null>(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -50,6 +53,15 @@ function ProductsContent() {
     fetchProducts();
   }, []);
 
+  const dynamicCategories = useMemo(() => {
+    const caps = new Set<string>();
+    products.forEach(p => {
+      const mainCat = p.category.split('|')[0];
+      if (mainCat) caps.add(mainCat);
+    });
+    return ["All", ...Array.from(caps).sort()];
+  }, [products]);
+
   const filteredProducts = useMemo(() => {
     let result = products.filter(p => 
       p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -59,7 +71,15 @@ function ProductsContent() {
 
     const category = searchParams.get("category");
     if (category) {
-      result = result.filter(p => p.category.toLowerCase() === category.toLowerCase());
+      result = result.filter(p => p.category.toLowerCase().startsWith(category.toLowerCase()));
+    }
+
+    if (minRating) {
+      result = result.filter(p => (p.avgRating || 0) >= minRating);
+    }
+
+    if (priceMax) {
+      result = result.filter(p => p.price <= priceMax);
     }
 
     if (sortBy === "price-low") result.sort((a, b) => a.price - b.price);
@@ -67,7 +87,7 @@ function ProductsContent() {
     if (sortBy === "newest") result.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
     return result;
-  }, [products, searchQuery, searchParams, sortBy]);
+  }, [products, searchQuery, searchParams, sortBy, minRating, priceMax]);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -136,17 +156,17 @@ function ProductsContent() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="text-sm font-medium mb-3">Categories</h4>
-                    <div className="space-y-2">
-                      {["All", "Electronics", "Fashion", "Home Decor", "Beauty"].map((cat) => (
+                    <div className="space-y-1 max-h-60 overflow-y-auto pr-2 custom-scrollbar">
+                      {dynamicCategories.map((cat) => (
                         <button
                           key={cat}
                           onClick={() => {
                             if (cat === "All") router.push("/products");
-                            else router.push(`/products?category=${cat.toLowerCase()}`);
+                            else router.push(`/products?category=${cat}`);
                           }}
                           className={cn(
-                            "block text-sm w-full text-left py-2 px-3 rounded-xl transition-all",
-                            (searchParams.get("category") === cat.toLowerCase()) || (cat === "All" && !searchParams.get("category"))
+                            "block text-xs w-full text-left py-2 px-3 rounded-xl transition-all truncate",
+                            (searchParams.get("category") === cat) || (cat === "All" && !searchParams.get("category"))
                             ? "bg-blue-50 text-blue-600 font-bold dark:bg-blue-900/20" : "text-muted-foreground hover:bg-zinc-50 dark:hover:bg-zinc-800"
                           )}
                         >
@@ -157,13 +177,49 @@ function ProductsContent() {
                   </div>
 
                   <div>
-                    <h4 className="text-sm font-medium mb-3">Price Range</h4>
-                    <div className="h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full relative">
-                      <div className="absolute left-0 right-0 h-full bg-blue-600 rounded-full" />
+                    <h4 className="text-sm font-medium mb-3">Customer Ratings</h4>
+                    <div className="space-y-2">
+                       {[4, 3, 2, 1].map((rating) => (
+                         <button
+                           key={rating}
+                           onClick={() => setMinRating(minRating === rating ? null : rating)}
+                           className={cn(
+                             "flex items-center text-xs w-full py-1 px-2 rounded-lg transition-all",
+                             minRating === rating ? "bg-zinc-100 dark:bg-zinc-800 font-bold" : "text-muted-foreground hover:bg-zinc-50"
+                           )}
+                         >
+                           <div className="flex text-yellow-500 mr-2">
+                             {Array.from({ length: 5 }).map((_, i) => (
+                               <Star key={i} className={cn("h-3 w-3", i < rating ? "fill-current" : "text-zinc-300")} />
+                             ))}
+                           </div>
+                           <span>& Up</span>
+                         </button>
+                       ))}
                     </div>
-                    <div className="flex justify-between mt-2 text-xs text-muted-foreground">
-                      <span>₹0</span>
-                      <span>₹5,00,000+</span>
+                  </div>
+
+                  <div>
+                    <h4 className="text-sm font-medium mb-3">Price Range</h4>
+                    <div className="space-y-2">
+                       {[
+                         { label: "All Prices", value: null },
+                         { label: "Under ₹1,000", value: 1000 },
+                         { label: "Under ₹5,000", value: 5000 },
+                         { label: "Under ₹20,000", value: 20000 },
+                         { label: "Under ₹50,000", value: 50000 },
+                       ].map((range) => (
+                         <button
+                           key={range.label}
+                           onClick={() => setPriceMax(range.value)}
+                           className={cn(
+                             "block text-xs w-full text-left py-1.5 px-3 rounded-xl transition-all",
+                             priceMax === range.value ? "bg-zinc-100 dark:bg-zinc-800 font-bold" : "text-muted-foreground hover:bg-zinc-50"
+                           )}
+                         >
+                           {range.label}
+                         </button>
+                       ))}
                     </div>
                   </div>
                 </div>

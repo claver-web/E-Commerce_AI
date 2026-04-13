@@ -55,10 +55,13 @@ export async function POST(req: Request) {
         console.log("Clerk User fetched:", !!clerkUser);
         
         if (clerkUser) {
-          user = await prisma.user.create({
-            data: {
+          const email = clerkUser.emailAddresses[0]?.emailAddress || "";
+          user = await prisma.user.upsert({
+            where: { email },
+            update: { clerkId: userId },
+            create: {
               clerkId: userId,
-              email: clerkUser.emailAddresses[0]?.emailAddress || "",
+              email: email,
               name: `${clerkUser.firstName || ""} ${clerkUser.lastName || ""}`.trim() || "User",
               role: "USER"
             }

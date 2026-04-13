@@ -70,7 +70,10 @@ export default function ProductDetailsPage() {
   if (!product) return <div>Product not found</div>;
 
   const images = product.images ? JSON.parse(product.images) : [];
-  const specs = product.specifications ? JSON.parse(product.specifications) : [];
+  const parsedSpecs = product.specifications ? JSON.parse(product.specifications) : [];
+  const specs = Array.isArray(parsedSpecs) 
+    ? parsedSpecs 
+    : Object.entries(parsedSpecs).map(([key, value]) => ({ key: key.charAt(0).toUpperCase() + key.slice(1).replace(/_/g, ' '), value: String(value) }));
 
   const handleAddToCart = () => {
     addItem(product, quantity);

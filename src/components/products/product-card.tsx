@@ -18,6 +18,8 @@ interface Product {
   category: string;
   images: string; // JSON string
   stock: number;
+  avgRating?: number;
+  aboutProduct?: string;
 }
 
 export default function ProductCard({ product }: { product: Product }) {
@@ -68,7 +70,7 @@ export default function ProductCard({ product }: { product: Product }) {
             {/* Badges */}
             <div className="absolute top-4 left-4">
               <Badge className="bg-blue-600 text-white border-none px-3 py-1 rounded-full text-[10px] uppercase font-bold tracking-wider">
-                {product.category}
+                {product.category.split('|')[0]}
               </Badge>
             </div>
             <button className="absolute top-4 right-4 p-2 bg-white/10 backdrop-blur-md rounded-full text-white hover:bg-red-500 transition-colors">
@@ -82,11 +84,11 @@ export default function ProductCard({ product }: { product: Product }) {
                 {product.name}
               </h3>
               <div className="flex items-center text-xs font-bold bg-zinc-100 dark:bg-zinc-800 px-2 py-1 rounded-lg shrink-0">
-                <Star className="h-3 w-3 fill-yellow-400 text-yellow-400 mr-1" /> 4.5
+                <Star className="h-3 w-3 fill-yellow-400 text-yellow-400 mr-1" /> {product.avgRating || 4.5}
               </div>
             </div>
-            <p className="text-zinc-500 dark:text-zinc-400 text-sm line-clamp-1">
-               Premium quality item for modern living.
+            <p className="text-zinc-500 dark:text-zinc-400 text-sm line-clamp-2">
+               {product.aboutProduct || "Premium quality item for modern living."}
             </p>
           </CardContent>
 
