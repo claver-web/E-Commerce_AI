@@ -92,10 +92,10 @@ export default function AdminModerationPage() {
                   <div className="flex flex-col md:flex-row md:items-start md:space-x-8 gap-6">
                     <div className="md:w-1/4 space-y-4 border-r pr-6">
                        <div className="flex items-center space-x-3">
-                          <div className="h-10 w-10 bg-blue-100 flex items-center justify-center font-bold text-blue-600 rounded-full">{review.user.name?.[0] || 'U'}</div>
+                          <div className="h-10 w-10 bg-blue-100 flex items-center justify-center font-bold text-blue-600 rounded-full">{(review.user?.name || review.amazonUserName || 'U')[0]}</div>
                           <div>
-                            <p className="text-sm font-bold">{review.user.name || "Anonymous"}</p>
-                            <p className="text-xs text-muted-foreground">{review.user.email}</p>
+                            <p className="text-sm font-bold">{review.user?.name || review.amazonUserName || "Amazon Customer"}</p>
+                            <p className="text-xs text-muted-foreground">{review.user?.email || "Imported Data"}</p>
                           </div>
                        </div>
                        <div className="space-y-2 pt-4">
@@ -155,9 +155,9 @@ export default function AdminModerationPage() {
                   <div className="flex-grow space-y-2">
                     <div className="flex justify-between">
                       <div>
-                        <p className="text-sm font-bold">{comment.user.name || "Anonymous User"}</p>
+                        <p className="text-sm font-bold">{comment.user?.name || "Anonymous User"}</p>
                         <p className="text-xs text-muted-foreground flex items-center">
-                          On <Link href="#" className="font-bold ml-1 hover:underline">{comment.product.name}</Link>
+                          On <Link href={`/products/${comment.productId}`} className="font-bold ml-1 hover:underline">{comment.product.name}</Link>
                         </p>
                       </div>
                       <div className="flex space-x-1">
