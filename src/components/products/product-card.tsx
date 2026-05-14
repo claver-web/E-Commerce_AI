@@ -25,6 +25,7 @@ interface Product {
 export default function ProductCard({ product }: { product: Product }) {
   const { addItem } = useCartStore();
   const images = JSON.parse(product.images);
+  console.log("working", product)
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -45,7 +46,7 @@ export default function ProductCard({ product }: { product: Product }) {
         <Link href={`/products/${product.id}`}>
           <div className="relative aspect-square overflow-hidden bg-zinc-100 dark:bg-zinc-800">
             <Image
-              src={images[0] || "/placeholder.png"}
+              src={images[0] || "https://placehold.co/600x600/e2e8f0/64748b?text=Product"}
               alt={product.name}
               fill
               priority
@@ -54,18 +55,18 @@ export default function ProductCard({ product }: { product: Product }) {
             />
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300" />
-            
+
             {/* Action Buttons */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
-               <button 
-                 onClick={handleAddToCart}
-                 className="p-3 bg-white text-black rounded-full shadow-xl hover:bg-blue-600 hover:text-white transition-colors"
-               >
-                 <ShoppingCart className="h-5 w-5" />
-               </button>
-               <div className={cn(buttonVariants({ variant: "default", size: "icon" }), "rounded-full bg-white text-black hover:bg-blue-600 hover:text-white")}>
-                 <Eye className="h-5 w-5" />
-               </div>
+              <button
+                onClick={handleAddToCart}
+                className="p-3 bg-white text-black rounded-full shadow-xl hover:bg-blue-600 hover:text-white transition-colors"
+              >
+                <ShoppingCart className="h-5 w-5" />
+              </button>
+              <div className={cn(buttonVariants({ variant: "default", size: "icon" }), "rounded-full bg-white text-black hover:bg-blue-600 hover:text-white")}>
+                <Eye className="h-5 w-5" />
+              </div>
             </div>
 
             {/* Badges */}
@@ -89,7 +90,7 @@ export default function ProductCard({ product }: { product: Product }) {
               </div>
             </div>
             <p className="text-zinc-500 dark:text-zinc-400 text-sm line-clamp-2">
-               {product.aboutProduct || "Premium quality item for modern living."}
+              {product.aboutProduct || "Premium quality item for modern living."}
             </p>
           </CardContent>
 

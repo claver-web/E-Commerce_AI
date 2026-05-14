@@ -31,6 +31,7 @@ export default function HomePage() {
           catRes.json()
         ]);
         setFeaturedProducts(prodData);
+        console.log("🔥 HOME FETCHED PRODUCTS:", prodData);
         setCategories(catData);
       } catch (e) {
         console.error("Failed to fetch data", e);

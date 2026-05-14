@@ -53,9 +53,14 @@ export default function ProductDetailsPage() {
         
         setProduct(data);
         
+        const placeholderUrl = "https://placehold.co/600x600/e2e8f0/64748b?text=Product";
         if (data.images) {
           const parsedImages = JSON.parse(data.images);
-          setMainImage(parsedImages[0] || "");
+          const firstImg = parsedImages[0];
+          const isValidImg = firstImg && firstImg !== "/placeholder.jpg" && firstImg !== "/placeholder.png";
+          setMainImage(isValidImg ? firstImg : placeholderUrl);
+        } else {
+          setMainImage(placeholderUrl);
         }
       } catch (e) {
         console.error("Failed to fetch product:", e);
@@ -130,17 +135,22 @@ export default function ProductDetailsPage() {
               />
             </div>
             <div className="grid grid-cols-4 gap-4">
-              {images.map((img: string, idx: number) => (
-                <button
-                  key={idx}
-                  onClick={() => setMainImage(img)}
-                  className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all ${
-                    mainImage === img ? "border-blue-600 scale-105" : "border-transparent opacity-70 hover:opacity-100"
-                  }`}
-                >
-                  <Image src={img} alt={`${product.name} ${idx}`} fill sizes="(max-width: 768px) 25vw, 15vw" className="object-cover" />
-                </button>
-              ))}
+              {images.map((img: string, idx: number) => {
+                const isValidThumbnail = img && img !== "/placeholder.jpg" && img !== "/placeholder.png";
+                const displayThumbnail = isValidThumbnail ? img : "https://placehold.co/600x600/e2e8f0/64748b?text=Product";
+                
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => setMainImage(displayThumbnail)}
+                    className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all ${
+                      mainImage === displayThumbnail ? "border-blue-600 scale-105" : "border-transparent opacity-70 hover:opacity-100"
+                    }`}
+                  >
+                    <Image src={displayThumbnail} alt={`${product.name} ${idx}`} fill sizes="(max-width: 768px) 25vw, 15vw" className="object-cover" />
+                  </button>
+                );
+              })}
             </div>
           </div>
 

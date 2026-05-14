@@ -8,7 +8,9 @@ import {
   Package,
   Activity,
   ArrowUpRight,
-  ArrowDownRight
+  ArrowDownRight,
+  Database,
+  Upload
 } from "lucide-react";
 import {
   Card,
@@ -31,7 +33,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { importPlatformData } from "@/app/admin/actions";
+import { toast } from "react-hot-toast";
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState<any>(null);
@@ -41,6 +45,38 @@ export default function AdminDashboard() {
   const [activitySearch, setActivitySearch] = useState("");
   const [searching, setSearching] = useState(false);
   const [updatingStatus, setUpdatingStatus] = useState<string | null>(null);
+  const [isImporting, setIsImporting] = useState(false);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleImportClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsImporting(true);
+    toast.loading("Uploading and Syncing data...", { id: "import" });
+    
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const result = await importPlatformData(formData);
+      if (result.success) {
+        toast.success(`Success! Imported ${result.count} products.`, { id: "import" });
+        fetchStats();
+      } else {
+        toast.error(result.error || "Failed to import data", { id: "import" });
+      }
+    } catch (error) {
+      toast.error("An unexpected error occurred", { id: "import" });
+    } finally {
+      setIsImporting(false);
+      if (fileInputRef.current) fileInputRef.current.value = ""; // Reset input
+    }
+  };
 
   const fetchStats = async () => {
     try {
@@ -156,7 +192,30 @@ export default function AdminDashboard() {
           <p className="text-muted-foreground">Monitor your store's performance at a glance.</p>
         </div>
         <div className="flex space-x-2">
-          {/* Dashboard filters or actions */}
+          <input 
+            type="file" 
+            ref={fileInputRef} 
+            onChange={handleFileChange} 
+            className="hidden" 
+            accept=".json,.csv" 
+          />
+          <Button 
+            variant="outline" 
+            onClick={handleImportClick} 
+            disabled={isImporting}
+            className="rounded-xl h-10 px-4 font-black uppercase tracking-widest text-[10px] border-blue-200 hover:border-blue-600 hover:bg-blue-50 text-blue-600 transition-all duration-300 shadow-lg shadow-blue-500/10"
+          >
+            {isImporting ? (
+              <Activity className="h-3 w-3 mr-2 animate-spin" />
+            ) : (
+              <Database className="h-3 w-3 mr-2" />
+            )}
+            Sync Platform Data
+          </Button>
+          <Button className="rounded-xl h-10 px-4 font-black uppercase tracking-widest text-[10px] bg-zinc-900 hover:bg-black text-white shadow-lg shadow-black/10">
+            <Upload className="h-3 w-3 mr-2" />
+            Export Report
+          </Button>
         </div>
       </div>
 
