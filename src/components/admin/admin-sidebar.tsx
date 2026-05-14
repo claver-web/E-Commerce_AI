@@ -11,19 +11,25 @@ import {
   BarChart3, 
   MessageSquare,
   Activity,
-  ArrowLeft
+  ArrowLeft,
+  Truck,
+  ShoppingBag
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 
 const menuItems = [
   { name: "Dashboard", href: "/admin/dashboard", icon: LayoutDashboard },
+  { name: "Track Orders", href: "/admin/track-orders", icon: Truck },
+  { name: "Cart Users", href: "/admin/carts", icon: ShoppingBag },
   { name: "Products", href: "/admin/products", icon: Package },
   { name: "Orders", href: "/admin/orders", icon: ShoppingCart },
   { name: "Reviews", href: "/admin/reviews", icon: MessageSquare },
   { name: "User Activity", href: "/admin/activity", icon: Activity },
   { name: "Analytics", href: "/admin/analytics", icon: BarChart3 },
 ];
+
+
 
 export default function AdminSidebar() {
   const pathname = usePathname();

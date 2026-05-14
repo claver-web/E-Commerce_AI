@@ -66,8 +66,35 @@ export default function ProductDetailsPage() {
     fetchProduct();
   }, [params.id]);
 
-  if (loading) return <div>Loading...</div>;
-  if (!product) return <div>Product not found</div>;
+  if (loading) {
+    return (
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow flex items-center justify-center bg-zinc-50 dark:bg-zinc-950">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+            <p className="text-zinc-500 font-medium">Loading product details...</p>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  if (!product) {
+    return (
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow flex items-center justify-center bg-zinc-50 dark:bg-zinc-950">
+          <div className="text-center space-y-4">
+            <h1 className="text-4xl font-bold">Product Not Found</h1>
+            <Button onClick={() => router.push("/products")}>Return to Shop</Button>
+          </div>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   const images = product.images ? JSON.parse(product.images) : [];
   const parsedSpecs = product.specifications ? JSON.parse(product.specifications) : [];

@@ -23,17 +23,34 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 
+import { useEffect, useState } from "react";
+
 const NavLinks = [
   { name: "Home", href: "/" },
   { name: "Shop", href: "/products" },
-  { name: "Categories", href: "/categories" },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
   const { setTheme } = useTheme();
   const { userId } = useAuth();
-  const { items } = useCartStore();
+  const { items, fetchCartFromDb } = useCartStore();
+  const [categories, setCategories] = useState<{ name: string; count: number }[]>([]);
+
+  useEffect(() => {
+    if (userId && items.length === 0) {
+      fetchCartFromDb();
+    }
+  }, [userId]);
+
+  useEffect(() => {
+    fetch("/api/categories")
+      .then(res => res.json())
+      .then(data => setCategories(data))
+      .catch(err => console.error("Error fetching categories:", err));
+  }, []);
+
+
   const cartItemCount = items.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
@@ -60,6 +77,31 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+
+          {/* Categories Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger className={cn(
+                "transition-colors hover:text-foreground/80 outline-none",
+                pathname === "/categories" ? "text-foreground" : "text-foreground/60"
+            )}>
+              Categories
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="w-56 p-2 rounded-xl">
+              <DropdownMenuItem className="p-0">
+                <Link href="/categories" className="w-full px-2 py-1.5 font-bold text-blue-600 block">
+                  All Categories
+                </Link>
+              </DropdownMenuItem>
+              <div className="h-px bg-zinc-100 dark:bg-zinc-800 my-1" />
+              {categories.map((cat) => (
+                <DropdownMenuItem key={cat.name} className="p-0">
+                  <Link href={`/products?category=${cat.name}`} className="w-full px-2 py-1.5 block capitalize">
+                    {cat.name.replace(/_/g, ' ').replace(/-/g, ' ')}
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
           {userId && (
             <Link
               href="/orders"
@@ -145,6 +187,25 @@ export default function Navbar() {
                       {link.name}
                     </Link>
                   ))}
+
+                  <div className="space-y-3">
+                    <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest pt-4">Categories</p>
+                    <Link 
+                      href="/categories" 
+                      className={cn("block text-lg font-medium", pathname === "/categories" ? "text-foreground" : "text-foreground/60")}
+                    >
+                      All Categories
+                    </Link>
+                    {categories.slice(0, 5).map((cat) => (
+                      <Link
+                        key={cat.name}
+                        href={`/products?category=${cat.name}`}
+                        className="block text-lg font-medium text-foreground/60 capitalize"
+                      >
+                        {cat.name.replace(/_/g, ' ').replace(/-/g, ' ')}
+                      </Link>
+                    ))}
+                  </div>
                   {userId && (
                     <Link
                       href="/orders"

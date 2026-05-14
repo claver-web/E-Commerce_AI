@@ -31,29 +31,78 @@ function ProductsContent() {
   
   const [products, setProducts] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadingMore, setLoadingMore] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const [hasMore, setHasMore] = useState(true);
+  const LIMIT = 12;
+
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
   const [searchQuery, setSearchQuery] = useState(searchParams.get("search") || "");
   const [sortBy, setSortBy] = useState("newest");
   const [minRating, setMinRating] = useState<number | null>(null);
   const [priceMax, setPriceMax] = useState<number | null>(null);
 
-  useEffect(() => {
-    const fetchProducts = async () => {
+  const fetchProducts = async (currentOffset: number, isInitial = false) => {
+    if (isInitial) {
       setLoading(true);
-      try {
-        const res = await fetch("/api/products");
-        const data = await res.json();
-        setProducts(data);
-      } catch (e) {
-        console.error("Failed to fetch products:", e);
-      } finally {
-        setLoading(false);
+    } else {
+      setLoadingMore(true);
+    }
+
+    try {
+      const category = searchParams.get("category") || "";
+      const url = `/api/products?limit=${LIMIT}&offset=${currentOffset}${category ? `&category=${category}` : ""}`;
+      const res = await fetch(url);
+      const data = await res.json();
+      
+      if (data.length < LIMIT) {
+        setHasMore(false);
+      } else {
+        setHasMore(true);
       }
-    };
-    fetchProducts();
-  }, []);
+
+      if (isInitial) {
+        setProducts(data);
+      } else {
+        setProducts(prev => [...prev, ...data]);
+      }
+    } catch (e) {
+      console.error("Failed to fetch products:", e);
+    } finally {
+      setLoading(false);
+      setLoadingMore(false);
+    }
+  };
+
+  useEffect(() => {
+    setOffset(0);
+    fetchProducts(0, true);
+  }, [searchParams]);
+
+  useEffect(() => {
+    if (offset === 0) return;
+    fetchProducts(offset);
+  }, [offset]);
+
+  // Infinite scroll observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && hasMore && !loading && !loadingMore) {
+          setOffset(prev => prev + LIMIT);
+        }
+      },
+      { threshold: 1.0 }
+    );
+
+    const target = document.getElementById("scroll-trigger");
+    if (target) observer.observe(target);
+
+    return () => observer.disconnect();
+  }, [hasMore, loading, loadingMore]);
 
   const dynamicCategories = useMemo(() => {
+
     const caps = new Set<string>();
     products.forEach(p => {
       const mainCat = p.category.split('|')[0];
@@ -235,9 +284,22 @@ function ProductsContent() {
                   <div key={i} className="aspect-square bg-muted animate-pulse rounded-3xl" />
                 ))
               ) : filteredProducts.length > 0 ? (
-                filteredProducts.map((product) => (
-                  <ProductCard key={product.id} product={product} />
-                ))
+                <>
+                  {filteredProducts.map((product) => (
+                    <ProductCard key={product.id} product={product} />
+                  ))}
+                  <div id="scroll-trigger" className="col-span-full h-20 flex items-center justify-center">
+                    {loadingMore && (
+                      <div className="flex items-center space-x-2">
+                        <div className="animate-spin rounded-full h-4 w-4 border-t-2 border-b-2 border-blue-600"></div>
+                        <p className="text-sm text-zinc-500 font-medium">Loading more products...</p>
+                      </div>
+                    )}
+                    {!hasMore && products.length > 0 && (
+                      <p className="text-sm text-zinc-400 font-medium">You've reached the end of the collection.</p>
+                    )}
+                  </div>
+                </>
               ) : (
                 <div className="col-span-full py-20 flex flex-col items-center justify-center text-center space-y-4 bg-white dark:bg-zinc-900 rounded-3xl shadow-sm border border-dashed">
                   <div className="h-20 w-20 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">

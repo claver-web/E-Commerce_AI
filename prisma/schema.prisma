@@ -43,6 +43,15 @@ model Product {
   imgLink            String?
   productLink        String?
 
+  // Urbanic Specific Fields
+  urbanicId          String?   @unique
+  skuId              Int?
+  skcId              Int?
+  colorName          String?
+  availableColors    String?   // Storing JSON as string
+  productUrl         String?
+  scrapeDate         String?
+
   createdAt       DateTime    @default(now())
   updatedAt       DateTime    @updatedAt
   comments        Comment[]
@@ -131,12 +140,28 @@ model OrderItem {
   product       Product   @relation(fields: [productId], references: [id])
 }
 
+model Visitor {
+  id            String    @id @default(cuid())
+  visitorId     String    @unique // Unique ID stored in browser cookies
+  lastSeen      DateTime  @default(now())
+  userAgent     String?
+  ipAddress     String?
+  createdAt     DateTime  @default(now())
+  activities    UserActivity[]
+}
+
 model UserActivity {
   id            String    @id @default(cuid())
-  userId        String
-  action        String    // 'view', 'purchase', 'add_to_cart', 'comment', 'review'
+  userId        String?   // Optional for anonymous visitors
+  visitorId     String?   // Link to Visitor model
+  action        String    // 'view', 'purchase', 'add_to_cart', 'comment', 'review', 'visit'
   productId     String?
   details       String?   // JSON fallback
+  userAgent     String?
+  ipAddress     String?
   createdAt     DateTime  @default(now())
-  user          User      @relation(fields: [userId], references: [id])
+  
+  user          User?      @relation(fields: [userId], references: [id])
+  visitor       Visitor?   @relation(fields: [visitorId], references: [visitorId])
 }
+

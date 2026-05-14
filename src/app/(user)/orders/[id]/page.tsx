@@ -109,24 +109,25 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
   const subtotal = order.amount / 1.18; // Reverse calculation for tax mock
   const tax = order.amount - subtotal;
 
+  const s = order.status.toUpperCase();
   const steps = [
-    { label: "Ordered", date: new Date(order.createdAt).toLocaleDateString(), completed: true, icon: <Package className="h-4 w-4" /> },
-    { label: "Paid", date: (order.status === "COMPLETED" || order.status === "CANCELLED") ? new Date(order.updatedAt).toLocaleDateString() : "Pending", completed: true, icon: <CreditCard className="h-4 w-4" /> },
+    { label: "Ordered", completed: true, icon: <Package className="h-4 w-4" /> },
+    { label: "Paid", completed: ["PAID", "PACKED", "DISPATCHED", "OUT_FOR_DELIVERY", "DELIVERED"].includes(s), icon: <CreditCard className="h-4 w-4" /> },
+    { label: "Packed", completed: ["PACKED", "DISPATCHED", "OUT_FOR_DELIVERY", "DELIVERED"].includes(s), icon: <Package className="h-4 w-4" /> },
+    { label: "Dispatched", completed: ["DISPATCHED", "OUT_FOR_DELIVERY", "DELIVERED"].includes(s), icon: <Truck className="h-4 w-4" /> },
+    { label: "Delivery", completed: ["OUT_FOR_DELIVERY", "DELIVERED"].includes(s), icon: <Truck className="h-4 w-4" /> },
+    { label: "Arrived", completed: s === "DELIVERED", icon: <CheckCircle2 className="h-4 w-4" /> },
   ];
 
-  if (order.status === "CANCELLED") {
-    steps.push({ 
+  if (s === "CANCELLED") {
+    // If cancelled, we show a special cancelled step instead of the shipping ones
+    steps.splice(2, 4, { 
       label: "Cancelled", 
-      date: new Date(order.updatedAt).toLocaleDateString(), 
       completed: true, 
       icon: <XCircle className="h-4 w-4" /> 
     });
-  } else {
-    steps.push(
-      { label: "Shipped", date: order.status === "COMPLETED" ? "In Transit" : "-", completed: false, icon: <Truck className="h-4 w-4" /> },
-      { label: "Delivered", date: "-", completed: false, icon: <CheckCircle2 className="h-4 w-4" /> }
-    );
   }
+
 
   return (
     <div className="flex flex-col min-h-screen bg-zinc-50 dark:bg-zinc-950">
@@ -211,7 +212,21 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
           <Card className="rounded-[2.5rem] overflow-hidden border-none shadow-xl bg-white dark:bg-zinc-900">
             <CardContent className="p-12">
               <div className="relative flex justify-between">
-                <div className="absolute top-5 left-0 w-full h-1 bg-zinc-100 dark:bg-zinc-800 -z-0" />
+                <div className="absolute top-5 left-0 w-full h-1 bg-zinc-100 dark:bg-zinc-800 -z-0 rounded-full" />
+                <div 
+                  className="absolute top-5 left-0 h-1 bg-blue-600 -z-0 transition-all duration-1000 rounded-full" 
+                  style={{ 
+                    width: (() => {
+                      if (s === "CANCELLED") return "40%";
+                      if (s === "DELIVERED") return "100%";
+                      if (s === "OUT_FOR_DELIVERY") return "80%";
+                      if (s === "DISPATCHED") return "60%";
+                      if (s === "PACKED") return "40%";
+                      if (s === "PAID") return "20%";
+                      return "0%";
+                    })()
+                  }}
+                />
                 {steps.map((step, idx) => (
                   <div key={idx} className="relative z-10 flex flex-col items-center text-center space-y-4">
                     <div className={cn(

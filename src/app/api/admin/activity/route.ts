@@ -2,30 +2,58 @@ import { NextResponse } from "next/server";
 import prisma from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 
-export async function GET() {
-  const { userId, sessionClaims } = await auth();
+export async function GET(request: Request) {
+  const { userId } = await auth();
+  if (!userId) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  if (!userId || ((sessionClaims?.metadata as any)?.role !== "ADMIN" && process.env.NODE_ENV === "production")) {
-    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  }
+  const { searchParams } = new URL(request.url);
+  const search = searchParams.get("search") || "";
 
   try {
     const activities = await prisma.userActivity.findMany({
+      where: search ? {
+        OR: [
+          { user: { name: { contains: search } } },
+          { user: { email: { contains: search } } },
+          { action: { contains: search } },
+          { details: { contains: search } }
+        ]
+      } : {},
       include: {
-        user: true,
+        user: {
+          select: { name: true, email: true }
+        }
       },
-      orderBy: {
-        createdAt: "desc",
-      },
-      take: 100,
+      take: 20,
+      orderBy: { createdAt: "desc" },
     });
 
-    return NextResponse.json(activities);
+    // If any activity is a purchase, we'll try to find the associated order
+    // This is a bit expensive but okay for a 'Recent Activity' list of 20 items.
+    const enrichedActivities = await Promise.all(activities.map(async (activity) => {
+      if (activity.action === "purchase" && activity.details) {
+        // Try to find order by ID if it's in details
+        const order = await prisma.order.findFirst({
+          where: {
+            OR: [
+              { id: activity.details },
+              { razorpayOrderId: activity.details }
+            ]
+          },
+          include: {
+            items: {
+              include: { product: { select: { name: true } } }
+            }
+          }
+        });
+        return { ...activity, order };
+      }
+      return activity;
+    }));
+    
+    return NextResponse.json(enrichedActivities);
   } catch (error) {
-    console.error("Error fetching admin activities:", error);
-    return NextResponse.json(
-      { error: "Internal Server Error" },
-      { status: 500 }
-    );
+    console.error("Error fetching activity:", error);
+    return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
   }
 }
