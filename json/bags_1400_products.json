@@ -1,0 +1,476 @@
+[
+  {
+    "product_id": "1359912",
+    "index": 0,
+    "title": "Solid Shell Crossbody Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,790",
+    "price_numeric": 1790,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-shell-crossbody-bag-1359912",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/cad187af99a947e1882d036ecc032a58UR_w360.webp",
+    "image_filename": "1359912.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1359912.webp",
+    "sku_id": 776379,
+    "skc_id": 229199,
+    "color_name": "Gold",
+    "color_id": "325",
+    "selected_color": "Gold",
+    "available_colors": [
+      {
+        "name": "Gold",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/3cbc9d6b4bd74736901911b14cd09ec8_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Gold",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/3cbc9d6b4bd74736901911b14cd09ec8_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/46c6dfba615f4d54986412f5a62a501c_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/46c6dfba615f4d54986412f5a62a501c_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "30",
+    "sub_color_id": "",
+    "pg_id": 121048,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1701142",
+    "index": 1,
+    "title": "Solid Shoulder Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,190",
+    "price_numeric": 1190,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-shoulder-bag-1701142",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/4cafff000eb342088b308f40cf39f713_w360.webp",
+    "image_filename": "1701142.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1701142.webp",
+    "sku_id": 931025,
+    "skc_id": 281037,
+    "color_name": "Red",
+    "color_id": "7",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/edcef1fd2d704d829cdf203987be79e4_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/edcef1fd2d704d829cdf203987be79e4_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/99a3ff9aa9754f1da4999378b55b40eb_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/99a3ff9aa9754f1da4999378b55b40eb_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 378901,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1451702",
+    "index": 2,
+    "title": "Solid Bucket Totes Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,190",
+    "price_numeric": 1190,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-bucket-totes-bag-1451702",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/5965ed8b7bf54cb9955203f42f39b130_w360.webp",
+    "image_filename": "1451702.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1451702.webp",
+    "sku_id": 815352,
+    "skc_id": 243063,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/a9eda254df754fe5834bb002704abd12_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/a9eda254df754fe5834bb002704abd12_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/c81dae5de4d44059b05e0874ee9d05f4_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/c81dae5de4d44059b05e0874ee9d05f4_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Gold",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9e2659546d1248bbba156c74d29d6f12_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Gold",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9e2659546d1248bbba156c74d29d6f12_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 6,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 107213,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1538681",
+    "index": 3,
+    "title": "Solid Satchel Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,490",
+    "price_numeric": 1490,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-satchel-bag-1538681",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/a5db091668f04b2681e169a98fe2e233_w360.webp",
+    "image_filename": "1538681.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1538681.webp",
+    "sku_id": 851216,
+    "skc_id": 256298,
+    "color_name": "Silver",
+    "color_id": "326",
+    "selected_color": "Red",
+    "available_colors": [
+      {
+        "name": "Gold",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/c1529b72e44144b69d54ac29c6df74be_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Gold",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/c1529b72e44144b69d54ac29c6df74be_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/7d8c6b9e42574c7badf7c5d7d5acaf35_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/7d8c6b9e42574c7badf7c5d7d5acaf35_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/5ac15617eee24b70b9a01008243c5066_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/5ac15617eee24b70b9a01008243c5066_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 6,
+    "main_color_id": "30",
+    "sub_color_id": "",
+    "pg_id": 352935,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1396962",
+    "index": 4,
+    "title": "Solid Box Crossbody Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,690",
+    "price_numeric": 1690,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-box-crossbody-bag-1396962",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/7d98071c4e794c3689ddef7f8c157022UR_w360.webp",
+    "image_filename": "1396962.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1396962.webp",
+    "sku_id": 793588,
+    "skc_id": 234686,
+    "color_name": "White",
+    "color_id": "2",
+    "selected_color": "Brown",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/20999db714894fe8ba22547d9aedb9c9_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/20999db714894fe8ba22547d9aedb9c9_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9eb3a75f2d9c4ac7bab7b27956bf27ad_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9eb3a75f2d9c4ac7bab7b27956bf27ad_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Brown",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/52bf55a99ea64a48a8fb25d0777ace8c_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Brown",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/52bf55a99ea64a48a8fb25d0777ace8c_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 6,
+    "main_color_id": "18",
+    "sub_color_id": "",
+    "pg_id": 115605,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1563772",
+    "index": 5,
+    "title": "Solid Bucket Shoulder Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,890",
+    "price_numeric": 1890,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-bucket-shoulder-bag-1563772",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/7ceed5d0072340ca815bab20887f249b_w360.webp",
+    "image_filename": "1563772.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1563772.webp",
+    "sku_id": 862373,
+    "skc_id": 260134,
+    "color_name": "Chocolate",
+    "color_id": "318",
+    "selected_color": "Chocolate",
+    "available_colors": [
+      {
+        "name": "Chocolate",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/848248c6e9974c608aa47228e011b7ce_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Chocolate",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/848248c6e9974c608aa47228e011b7ce_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Brown",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9334f7947f2e4ea192dec60c221b37e7_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Brown",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9334f7947f2e4ea192dec60c221b37e7_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/281df8f63c4f4708a04b7d3552da98e0_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/281df8f63c4f4708a04b7d3552da98e0_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 6,
+    "main_color_id": "12",
+    "sub_color_id": "",
+    "pg_id": 361552,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1360222",
+    "index": 6,
+    "title": "Solid Box Crossbody Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,690",
+    "price_numeric": 1690,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/solid-box-crossbody-bag-1360222",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/8b3ce71c115d4f0abd1296b0c0c6698bUR_w360.webp",
+    "image_filename": "1360222.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1360222.webp",
+    "sku_id": 776500,
+    "skc_id": 229252,
+    "color_name": "Off White",
+    "color_id": "308",
+    "selected_color": "Off White",
+    "available_colors": [
+      {
+        "name": "Off White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ff18ede525494dd7892c7c4aac573394_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Off White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ff18ede525494dd7892c7c4aac573394_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ea92646504d7438d938da94c45c43e38_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Silver",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ea92646504d7438d938da94c45c43e38_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "18",
+    "sub_color_id": "",
+    "pg_id": 120981,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1465772",
+    "index": 7,
+    "title": "Alphabet Bucket Tote Bag",
+    "category": "bags_1400",
+    "category_url": "https://in.urbanic.com/category/bags-1400",
+    "price": "₹1,190",
+    "price_numeric": 1190,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/alphabet-bucket-tote-bag-1465772",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/79cea03bd13844c0a269b28e51ac586a_w360.webp",
+    "image_filename": "1465772.webp",
+    "image_path": "scraped_data_None_20260514_125910\\images\\1465772.webp",
+    "sku_id": 820956,
+    "skc_id": 245490,
+    "color_name": "Dark Blue",
+    "color_id": "87",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9ee291fdbf584d7c8c3dbc9ffa1ce160_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9ee291fdbf584d7c8c3dbc9ffa1ce160_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Dark Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/55bf1fbf5fd8433795f5062e06692046_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Dark Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/55bf1fbf5fd8433795f5062e06692046_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/142a9c61691245599e6139cccbad52c6_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/142a9c61691245599e6139cccbad52c6_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 6,
+    "main_color_id": "11",
+    "sub_color_id": "",
+    "pg_id": 104906,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:59:09",
+    "image_downloaded": true
+  }
+]

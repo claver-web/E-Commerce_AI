@@ -1,0 +1,912 @@
+[
+  {
+    "product_id": "1273731",
+    "index": 0,
+    "title": "Double Layer Printed Mesh Cami Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,596",
+    "price_numeric": 1596,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/double-layer-printed-mesh-cami-dress-1273731",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/eeb28c323bec464dbfb6834ab1d7140bUR_w360.webp",
+    "image_filename": "1273731.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1273731.webp",
+    "sku_id": 736599,
+    "skc_id": 216410,
+    "color_name": "Canyon Red",
+    "color_id": "311",
+    "selected_color": "Canyon Red",
+    "available_colors": [
+      {
+        "name": "Canyon Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6fdcbaa3541b48f5b21330d876037095_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Canyon Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6fdcbaa3541b48f5b21330d876037095_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 132683,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "63947",
+    "index": 1,
+    "title": "Rhinestone Cocktail Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,614",
+    "price_numeric": 1614,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/rhinestone-cocktail-dress-63947",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/68ff169af5f748ca97aa10d0f8b992de_w360.webp",
+    "image_filename": "63947.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\63947.webp",
+    "sku_id": 407002,
+    "skc_id": 116071,
+    "color_name": "Apricot",
+    "color_id": "25",
+    "selected_color": "Apricot",
+    "available_colors": [
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8e27e6701d1d41b8beff9799802b3515_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8e27e6701d1d41b8beff9799802b3515_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Purple",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/76cc46a5cfaf4f94b94e0fba507e66fc_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Purple",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/76cc46a5cfaf4f94b94e0fba507e66fc_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "25",
+    "sub_color_id": "",
+    "pg_id": 228456,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1988862",
+    "index": 2,
+    "title": "Belted A-Line Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,590",
+    "price_numeric": 1590,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/belted-a-line-dress-1988862",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/91ba84e03e844f80be884f8b0237279f_w360.webp",
+    "image_filename": "1988862.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1988862.webp",
+    "sku_id": 1070032,
+    "skc_id": 326790,
+    "color_name": "Maroon",
+    "color_id": "28",
+    "selected_color": "Maroon",
+    "available_colors": [
+      {
+        "name": "Maroon",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/99a87217e039412c93b2345a9deeccec_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Maroon",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/99a87217e039412c93b2345a9deeccec_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 427876,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1958102",
+    "index": 3,
+    "title": "Tank Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,390",
+    "price_numeric": 1390,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/tank-dress-1958102",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/6fa3227cfc83479299b0806deb5c2ecd_w360.webp",
+    "image_filename": "1958102.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1958102.webp",
+    "sku_id": 1052349,
+    "skc_id": 321692,
+    "color_name": "Black-White",
+    "color_id": "24",
+    "selected_color": "Black-White",
+    "available_colors": [
+      {
+        "name": "Black-White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9294cf5e36b64cc5aeb74cc988a40339_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black-White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/9294cf5e36b64cc5aeb74cc988a40339_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "13",
+    "sub_color_id": "",
+    "pg_id": 429939,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "45644",
+    "index": 4,
+    "title": "Smocking Bodycon Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹596",
+    "price_numeric": 596,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/smocking-bodycon-dress-45644",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/1e73b09252334cc6bc072de6d499df84_w360.webp",
+    "image_filename": "45644.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\45644.webp",
+    "sku_id": 292854,
+    "skc_id": 83114,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6f232254d1334ec199a56a2668f2d711_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6f232254d1334ec199a56a2668f2d711_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 261781,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1518421",
+    "index": 5,
+    "title": "Sequinned Cocktail Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹4,690",
+    "price_numeric": 4690,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/sequinned-cocktail-dress-1518421",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/8b1de0a2baf04638998918eea81954eb_w360.webp",
+    "image_filename": "1518421.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1518421.webp",
+    "sku_id": 842086,
+    "skc_id": 253390,
+    "color_name": "Apricot",
+    "color_id": "25",
+    "selected_color": "Apricot",
+    "available_colors": [
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/1a31beedfdff40e39b376bd524fb85e8_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/1a31beedfdff40e39b376bd524fb85e8_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "25",
+    "sub_color_id": "",
+    "pg_id": 350454,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1954632",
+    "index": 6,
+    "title": "Gathered Co-ord Set",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,490",
+    "price_numeric": 1490,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/gathered-co-ord-set-1954632",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/2abf2a84e5e544858f6caebb30716866_w360.webp",
+    "image_filename": "1954632.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1954632.webp",
+    "sku_id": 1050663,
+    "skc_id": 321190,
+    "color_name": "Grey",
+    "color_id": "319",
+    "selected_color": "Grey",
+    "available_colors": [
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/494716a9a2cc49d787f068c3982ae680_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/494716a9a2cc49d787f068c3982ae680_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "22",
+    "sub_color_id": "",
+    "pg_id": 428550,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1712132",
+    "index": 7,
+    "title": "Patchwork Top",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹790",
+    "price_numeric": 790,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/patchwork-top-1712132",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/1575c385bd144f09b37a80bb1eb3aadb_w360.webp",
+    "image_filename": "1712132.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1712132.webp",
+    "sku_id": 937435,
+    "skc_id": 282945,
+    "color_name": "Apricot",
+    "color_id": "25",
+    "selected_color": "Apricot",
+    "available_colors": [
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8a4f9f80d65a480a98ab8bc75fdac2aa_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8a4f9f80d65a480a98ab8bc75fdac2aa_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ccc37316400345a698b6e0da005b973e_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ccc37316400345a698b6e0da005b973e_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "25",
+    "sub_color_id": "",
+    "pg_id": 385985,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1552951",
+    "index": 8,
+    "title": "Slit A-Line Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,590",
+    "price_numeric": 1590,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/slit-a-line-dress-1552951",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/18e80ae9b2eb463a8c976478b87c8374_w360.webp",
+    "image_filename": "1552951.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1552951.webp",
+    "sku_id": 856752,
+    "skc_id": 258313,
+    "color_name": "Burgundy",
+    "color_id": "3",
+    "selected_color": "Burgundy",
+    "available_colors": [
+      {
+        "name": "Burgundy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f96e45e9a48e4ace862fa7ab597070e9_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Burgundy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f96e45e9a48e4ace862fa7ab597070e9_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d795f92f92644cc38477175eb36cb5c8_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d795f92f92644cc38477175eb36cb5c8_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f348afa6f9c1491faa8425f660cee6e6_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f348afa6f9c1491faa8425f660cee6e6_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 6,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 356303,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "2000732",
+    "index": 9,
+    "title": "Knotted Straight Leg Pants",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,290",
+    "price_numeric": 1290,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/knotted-straight-leg-pants-2000732",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/91b1b3317b7f4495986ac8052e881e3d_w360.webp",
+    "image_filename": "2000732.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\2000732.webp",
+    "sku_id": 1075931,
+    "skc_id": 328858,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d6c4aeb07d004c96b47109e990e45076_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d6c4aeb07d004c96b47109e990e45076_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 429785,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1535291",
+    "index": 10,
+    "title": "Cocktail Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,590",
+    "price_numeric": 1590,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/cocktail-dress-1535291",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/962d549d95014d989d04e6d01894c317_w360.webp",
+    "image_filename": "1535291.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1535291.webp",
+    "sku_id": 849690,
+    "skc_id": 255811,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/16d008d07ad542cf8ec2642f302a9e3e_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/16d008d07ad542cf8ec2642f302a9e3e_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 353180,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1424231",
+    "index": 11,
+    "title": "Open Back Bodycon Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,645",
+    "price_numeric": 1645,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/open-back-bodycon-dress-1424231",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/cc9b667a125141c7a3a0ddf2f6441267_w360.webp",
+    "image_filename": "1424231.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1424231.webp",
+    "sku_id": 804724,
+    "skc_id": 238895,
+    "color_name": "Dark Grey",
+    "color_id": "320",
+    "selected_color": "Dark Grey",
+    "available_colors": [
+      {
+        "name": "Dark Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/948a4f2414c14566b986808a4691d295_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Dark Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/948a4f2414c14566b986808a4691d295_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "22",
+    "sub_color_id": "",
+    "pg_id": 111361,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1911862",
+    "index": 12,
+    "title": "Backless Bodycon Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹990",
+    "price_numeric": 990,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/backless-bodycon-dress-1911862",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/cf4604d988a8461d84931714dcec8a05_w360.webp",
+    "image_filename": "1911862.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1911862.webp",
+    "sku_id": 1030567,
+    "skc_id": 314264,
+    "color_name": "Multicolor",
+    "color_id": "23",
+    "selected_color": "Multicolor",
+    "available_colors": [
+      {
+        "name": "Multicolor",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8201eec1e434418fb7e9d243e0245199_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Multicolor",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8201eec1e434418fb7e9d243e0245199_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "13",
+    "sub_color_id": "",
+    "pg_id": 414137,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1525461",
+    "index": 13,
+    "title": "Sheer Cocktail Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹3,290",
+    "price_numeric": 3290,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/sheer-cocktail-dress-1525461",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/f8245026400942d697ef594eead46aae_w360.webp",
+    "image_filename": "1525461.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1525461.webp",
+    "sku_id": 845288,
+    "skc_id": 254422,
+    "color_name": "Pink",
+    "color_id": "6",
+    "selected_color": "Pink",
+    "available_colors": [
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/1d69c873d0b343dba0e667b1165354b6_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/1d69c873d0b343dba0e667b1165354b6_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "20",
+    "sub_color_id": "",
+    "pg_id": 351971,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1506101",
+    "index": 14,
+    "title": "Bow Cocktail Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,890",
+    "price_numeric": 1890,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/bow-cocktail-dress-1506101",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/ea767bb8fa1741148320273a9a3118ef_w360.webp",
+    "image_filename": "1506101.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1506101.webp",
+    "sku_id": 836280,
+    "skc_id": 251476,
+    "color_name": "Red",
+    "color_id": "7",
+    "selected_color": "Champagne",
+    "available_colors": [
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6821325e64c549b99ecbdd0c98cc5488_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6821325e64c549b99ecbdd0c98cc5488_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Champagne",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/58a899a1f48a46cbbf76b910020108bb_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Champagne",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/58a899a1f48a46cbbf76b910020108bb_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 348316,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1432872",
+    "index": 15,
+    "title": "A-Line Flared Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,990",
+    "price_numeric": 1990,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/a-line-flared-dress-1432872",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/e6b65cb6db6b4050b83961a2ea37daa2_w360.webp",
+    "image_filename": "1432872.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1432872.webp",
+    "sku_id": 808585,
+    "skc_id": 240225,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d4943dc59be74f5b87d4e46e17691ddc_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d4943dc59be74f5b87d4e46e17691ddc_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 108454,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1294411",
+    "index": 16,
+    "title": "Off-Shoulder Printed Mesh Top",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,076",
+    "price_numeric": 1076,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/off-shoulder-printed-mesh-top-1294411",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/5c0a65b017b648dc9f609999df0585f0_w360.webp",
+    "image_filename": "1294411.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1294411.webp",
+    "sku_id": 745779,
+    "skc_id": 219297,
+    "color_name": "Pink",
+    "color_id": "6",
+    "selected_color": "Pink",
+    "available_colors": [
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/5136a2a4a3f54afa8f58505a66c0e754_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/5136a2a4a3f54afa8f58505a66c0e754_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "20",
+    "sub_color_id": "",
+    "pg_id": 130592,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1378041",
+    "index": 17,
+    "title": "Sheer Flare Leg Pants",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,259",
+    "price_numeric": 1259,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/sheer-flare-leg-pants-1378041",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/75dbe05ac1ad477a8180ed7e1b1429af_w360.webp",
+    "image_filename": "1378041.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1378041.webp",
+    "sku_id": 785069,
+    "skc_id": 232060,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f29c12ccd0e849a7902e6ed321a04812_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f29c12ccd0e849a7902e6ed321a04812_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 118208,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1959932",
+    "index": 18,
+    "title": "Button Bodycon Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹1,590",
+    "price_numeric": 1590,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/button-bodycon-dress-1959932",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/193bcd409aad461d8cd93d89f4f39c34_w360.webp",
+    "image_filename": "1959932.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1959932.webp",
+    "sku_id": 1053874,
+    "skc_id": 321997,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/af4160b2feb6470db7742246261de262_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/af4160b2feb6470db7742246261de262_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 428638,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1277221",
+    "index": 19,
+    "title": "Beaded Tank Dress",
+    "category": "summer_guide_11725",
+    "category_url": "https://in.urbanic.com/activity/summer-guide-11725",
+    "price": "₹2,596",
+    "price_numeric": 2596,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/beaded-tank-dress-1277221",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/e93622e67eac408d8189c6e47b0cad92_w360.webp",
+    "image_filename": "1277221.webp",
+    "image_path": "scraped_data_None_20260514_130712\\images\\1277221.webp",
+    "sku_id": 738518,
+    "skc_id": 216960,
+    "color_name": "Navy",
+    "color_id": "5",
+    "selected_color": "Navy",
+    "available_colors": [
+      {
+        "name": "Navy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/807934374d764ab7a5113a9def9e5caa_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Navy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/807934374d764ab7a5113a9def9e5caa_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "11",
+    "sub_color_id": "",
+    "pg_id": 132161,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 13:07:11",
+    "image_downloaded": true
+  }
+]

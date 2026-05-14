@@ -1,0 +1,972 @@
+[
+  {
+    "product_id": "1712132",
+    "index": 0,
+    "title": "Patchwork Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹790",
+    "price_numeric": 790,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/patchwork-top-1712132",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/1575c385bd144f09b37a80bb1eb3aadb_w360.webp",
+    "image_filename": "1712132.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1712132.webp",
+    "sku_id": 937435,
+    "skc_id": 282945,
+    "color_name": "Apricot",
+    "color_id": "25",
+    "selected_color": "Apricot",
+    "available_colors": [
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8a4f9f80d65a480a98ab8bc75fdac2aa_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Apricot",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/8a4f9f80d65a480a98ab8bc75fdac2aa_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ccc37316400345a698b6e0da005b973e_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ccc37316400345a698b6e0da005b973e_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "25",
+    "sub_color_id": "",
+    "pg_id": 385985,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1752742",
+    "index": 1,
+    "title": "Bow Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹890",
+    "price_numeric": 890,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/bow-top-1752742",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/bde77dbcc5d644f9807fa379812026fe_w360.webp",
+    "image_filename": "1752742.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1752742.webp",
+    "sku_id": 957720,
+    "skc_id": 288964,
+    "color_name": "Light Blue",
+    "color_id": "86",
+    "selected_color": "Light Blue",
+    "available_colors": [
+      {
+        "name": "Light Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/cc36d01f1a294f36a01b34bf38e7f401_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Light Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/cc36d01f1a294f36a01b34bf38e7f401_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "11",
+    "sub_color_id": "",
+    "pg_id": 389357,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1963542",
+    "index": 2,
+    "title": "Pullover T-Shirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹890",
+    "price_numeric": 890,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/pullover-t-shirt-1963542",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/6e8592b123914152acb527a478b39a24_w360.webp",
+    "image_filename": "1963542.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1963542.webp",
+    "sku_id": 1056113,
+    "skc_id": 322587,
+    "color_name": "White",
+    "color_id": "2",
+    "selected_color": "White",
+    "available_colors": [
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/11e222986c47470ab502fba77d1cdd86_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/11e222986c47470ab502fba77d1cdd86_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "18",
+    "sub_color_id": "",
+    "pg_id": 423274,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "117933",
+    "index": 3,
+    "title": "Pleated Half Placket Blouse",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,145",
+    "price_numeric": 1145,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/pleated-half-placket-blouse-117933",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/9354ae2379a44efe84a58d962bb24651UR_w360.webp",
+    "image_filename": "117933.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\117933.webp",
+    "sku_id": 697262,
+    "skc_id": 204391,
+    "color_name": "Fuschia",
+    "color_id": "310",
+    "selected_color": "Fuschia",
+    "available_colors": [
+      {
+        "name": "Fuschia",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/94756f82ca064d1ca574f949e26e04d9_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Fuschia",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/94756f82ca064d1ca574f949e26e04d9_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "20",
+    "sub_color_id": "",
+    "pg_id": 144598,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1907652",
+    "index": 4,
+    "title": "Contrast Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹790",
+    "price_numeric": 790,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/contrast-top-1907652",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/3e6a5fdaf45849588b068c040a47c36c_w360.webp",
+    "image_filename": "1907652.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1907652.webp",
+    "sku_id": 1028828,
+    "skc_id": 313543,
+    "color_name": "Burgundy",
+    "color_id": "3",
+    "selected_color": "Burgundy",
+    "available_colors": [
+      {
+        "name": "Burgundy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6418c0e160bc4d2398bac4444f68faab_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Burgundy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6418c0e160bc4d2398bac4444f68faab_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 416566,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1531131",
+    "index": 5,
+    "title": "Lace-trimmed Bralette Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,890",
+    "price_numeric": 1890,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/lace-trimmed-bralette-top-1531131",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/caca945e41604c769d911ded36a634a0_w360.webp",
+    "image_filename": "1531131.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1531131.webp",
+    "sku_id": 847498,
+    "skc_id": 255190,
+    "color_name": "Red",
+    "color_id": "7",
+    "selected_color": "Red",
+    "available_colors": [
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6074c84b045d48529716c474c6e8f846_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6074c84b045d48529716c474c6e8f846_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f6822cf86e674f88a8f6865ae02479cc_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/f6822cf86e674f88a8f6865ae02479cc_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d05be83150a0402f964159daa727430b_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d05be83150a0402f964159daa727430b_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/cbed3af1e0524b9980eb4cd039bd89eb_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/cbed3af1e0524b9980eb4cd039bd89eb_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/1fbe4f21c3c8483286a9d50c834e6684_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/1fbe4f21c3c8483286a9d50c834e6684_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Purple",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/fd65f467f6944902a06a54c737d64f6b_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Purple",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/fd65f467f6944902a06a54c737d64f6b_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 12,
+    "main_color_id": "16",
+    "sub_color_id": "",
+    "pg_id": 351355,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1982972",
+    "index": 6,
+    "title": "Fake 2 PCS Pullover T-Shirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹790",
+    "price_numeric": 790,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/fake-2-pcs-pullover-t-shirt-1982972",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/26f720c9210b4c2da950c1f482784a12_w360.webp",
+    "image_filename": "1982972.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1982972.webp",
+    "sku_id": 1066000,
+    "skc_id": 325758,
+    "color_name": "Grey-Navy",
+    "color_id": "636",
+    "selected_color": "Grey-Navy",
+    "available_colors": [
+      {
+        "name": "Grey-Navy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/62bded69c16747e4a4ec222bdfc34f33_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Grey-Navy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/62bded69c16747e4a4ec222bdfc34f33_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "13",
+    "sub_color_id": "",
+    "pg_id": 426383,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1956292",
+    "index": 7,
+    "title": "Contrast 3D Floral Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹990",
+    "price_numeric": 990,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/contrast-3d-floral-top-1956292",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/e33e810d5437409982a707792f8ce235_w360.webp",
+    "image_filename": "1956292.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1956292.webp",
+    "sku_id": 1051296,
+    "skc_id": 321401,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/4f1b4337a8dc44bb8e432f2f1c2115df_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/4f1b4337a8dc44bb8e432f2f1c2115df_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 422117,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1265571",
+    "index": 8,
+    "title": "Double Layer Printed Mesh Tank Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹945",
+    "price_numeric": 945,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/double-layer-printed-mesh-tank-top-1265571",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/03bdca43a7ea44209a86125f261f115dUR_w360.webp",
+    "image_filename": "1265571.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1265571.webp",
+    "sku_id": 732569,
+    "skc_id": 215233,
+    "color_name": "Multicolor",
+    "color_id": "23",
+    "selected_color": "Multicolor",
+    "available_colors": [
+      {
+        "name": "Multicolor",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6326402716ca42218ddb8d898a945f16_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Multicolor",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/6326402716ca42218ddb8d898a945f16_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "13",
+    "sub_color_id": "",
+    "pg_id": 133861,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1864152",
+    "index": 9,
+    "title": "Floral Printed Pullover T-Shirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹690",
+    "price_numeric": 690,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/floral-printed-pullover-t-shirt-1864152",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/79c46f447cfe49a48c5ec5b2d245ce74_w360.webp",
+    "image_filename": "1864152.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1864152.webp",
+    "sku_id": 1009703,
+    "skc_id": 306852,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/450a6c91548c4a5587a2e7fcda4aa341_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/450a6c91548c4a5587a2e7fcda4aa341_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ff5142a5a42a4f56b5c783fd78afbacb_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ff5142a5a42a4f56b5c783fd78afbacb_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 406879,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1294411",
+    "index": 10,
+    "title": "Off-Shoulder Printed Mesh Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,076",
+    "price_numeric": 1076,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/off-shoulder-printed-mesh-top-1294411",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/5c0a65b017b648dc9f609999df0585f0_w360.webp",
+    "image_filename": "1294411.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1294411.webp",
+    "sku_id": 745779,
+    "skc_id": 219297,
+    "color_name": "Pink",
+    "color_id": "6",
+    "selected_color": "Pink",
+    "available_colors": [
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/5136a2a4a3f54afa8f58505a66c0e754_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Pink",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/5136a2a4a3f54afa8f58505a66c0e754_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "20",
+    "sub_color_id": "",
+    "pg_id": 130592,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1314231",
+    "index": 11,
+    "title": "Tied Bow Blouse",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹2,495",
+    "price_numeric": 2495,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/tied-bow-blouse-1314231",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/2ee8c2503428487f971481f411b76570UR_w360.webp",
+    "image_filename": "1314231.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1314231.webp",
+    "sku_id": 755242,
+    "skc_id": 222306,
+    "color_name": "White-Blue",
+    "color_id": "157",
+    "selected_color": "White-Blue",
+    "available_colors": [
+      {
+        "name": "White-Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/2d12cbb62878492bbbe1482ef09437c4_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "White-Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/2d12cbb62878492bbbe1482ef09437c4_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "13",
+    "sub_color_id": "",
+    "pg_id": 127752,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1530012",
+    "index": 12,
+    "title": "Buttoned Half Placket Sweatshirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,390",
+    "price_numeric": 1390,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/buttoned-half-placket-sweatshirt-1530012",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/86f23fe6016b412c92f610f661196130_w360.webp",
+    "image_filename": "1530012.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1530012.webp",
+    "sku_id": 846926,
+    "skc_id": 255024,
+    "color_name": "Khaki",
+    "color_id": "11",
+    "selected_color": "Khaki",
+    "available_colors": [
+      {
+        "name": "Khaki",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/c478df69c52c40aaa66252252db43c37_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Khaki",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/c478df69c52c40aaa66252252db43c37_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "12",
+    "sub_color_id": "",
+    "pg_id": 354233,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1449602",
+    "index": 13,
+    "title": "Bow Pullover Sweatshirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,890",
+    "price_numeric": 1890,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/bow-pullover-sweatshirt-1449602",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/5dbbfce18c664a3fa0a3a67aa34aed36_w360.webp",
+    "image_filename": "1449602.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1449602.webp",
+    "sku_id": 814552,
+    "skc_id": 242649,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Grey",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/98bf246b6d1540f4a34670abdbcb766b_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/98bf246b6d1540f4a34670abdbcb766b_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/50a251701a194da09f8af86477caf0ef_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/50a251701a194da09f8af86477caf0ef_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 107596,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1339351",
+    "index": 14,
+    "title": "Oversized Pullover T-shirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,645",
+    "price_numeric": 1645,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/oversized-pullover-t-shirt-1339351",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/8c486223daad42ad8f89a742696bf20fUR_w360.webp",
+    "image_filename": "1339351.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1339351.webp",
+    "sku_id": 766586,
+    "skc_id": 225968,
+    "color_name": "Grey",
+    "color_id": "319",
+    "selected_color": "Grey",
+    "available_colors": [
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/a9e7f9de5b914a7e9cabc9033d6a26a0_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/a9e7f9de5b914a7e9cabc9033d6a26a0_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Light Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/07449be3549d4be38306b1cc8e4c4c92_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Light Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/07449be3549d4be38306b1cc8e4c4c92_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "22",
+    "sub_color_id": "",
+    "pg_id": 124181,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1481422",
+    "index": 15,
+    "title": "Pullover Sweatshirt",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹990",
+    "price_numeric": 990,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/pullover-sweatshirt-1481422",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/0f3b8e1578544b789fcb720c8d56482b_w360.webp",
+    "image_filename": "1481422.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1481422.webp",
+    "sku_id": 826456,
+    "skc_id": 247997,
+    "color_name": "Grey",
+    "color_id": "319",
+    "selected_color": "Grey",
+    "available_colors": [
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/551787e3688f4f229e94c6873e77e30d_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Grey",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/551787e3688f4f229e94c6873e77e30d_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "22",
+    "sub_color_id": "",
+    "pg_id": 345972,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1395331",
+    "index": 16,
+    "title": "Tied Placket Blouse",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,614",
+    "price_numeric": 1614,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/tied-placket-blouse-1395331",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/cd521aaf6ca0402bbc7d06dc7ec0e71e_w360.webp",
+    "image_filename": "1395331.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1395331.webp",
+    "sku_id": 792904,
+    "skc_id": 234456,
+    "color_name": "Black",
+    "color_id": "1",
+    "selected_color": "Black",
+    "available_colors": [
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/095584a7c4fd464dac64b62e925c454b_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Black",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/095584a7c4fd464dac64b62e925c454b_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Burgundy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ea733de4fce74311bc882993c17b91f4_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Burgundy",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/ea733de4fce74311bc882993c17b91f4_w96.webp",
+        "selected": false
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "21",
+    "sub_color_id": "",
+    "pg_id": 115828,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1281221",
+    "index": 17,
+    "title": "Striped Bralette Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,134",
+    "price_numeric": 1134,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/striped-bralette-top-1281221",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/9935c55a924446eba8d888b6bb18b238UR_w360.webp",
+    "image_filename": "1281221.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1281221.webp",
+    "sku_id": 740347,
+    "skc_id": 217512,
+    "color_name": "Blue",
+    "color_id": "8",
+    "selected_color": "Red",
+    "available_colors": [
+      {
+        "name": "Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/30149c4626134818bb34bf52be85759f_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Blue",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/30149c4626134818bb34bf52be85759f_w96.webp",
+        "selected": false
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d57dea189e3040da803735e6992733e4_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Red",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/d57dea189e3040da803735e6992733e4_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 4,
+    "main_color_id": "11",
+    "sub_color_id": "",
+    "pg_id": 131610,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1353041",
+    "index": 18,
+    "title": "Draped Placket Blouse",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹1,974",
+    "price_numeric": 1974,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/draped-placket-blouse-1353041",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/b07759e2ab314b43bcf1a0394bb9ccf8UR_w360.webp",
+    "image_filename": "1353041.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1353041.webp",
+    "sku_id": 773587,
+    "skc_id": 227946,
+    "color_name": "Off White",
+    "color_id": "308",
+    "selected_color": "Off White",
+    "available_colors": [
+      {
+        "name": "Off White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/94554b35046d49caa1d1772852a79bad_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "Off White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/94554b35046d49caa1d1772852a79bad_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "18",
+    "sub_color_id": "",
+    "pg_id": 122299,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  },
+  {
+    "product_id": "1261981",
+    "index": 19,
+    "title": "Darted Cami Top",
+    "category": "tops_1411",
+    "category_url": "https://in.urbanic.com/category/tops-1411",
+    "price": "₹945",
+    "price_numeric": 945,
+    "original_price": null,
+    "product_url": "https://in.urbanic.com/details/darted-cami-top-1261981",
+    "image_url": "https://img101.urbanic.com/v1/goods-pic/97285f603d2e49b590055e97b50c68a8UR_w360.webp",
+    "image_filename": "1261981.webp",
+    "image_path": "scraped_data_None_20260514_125512\\images\\1261981.webp",
+    "sku_id": 730724,
+    "skc_id": 214694,
+    "color_name": "White",
+    "color_id": "2",
+    "selected_color": "White",
+    "available_colors": [
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/04e2486b1c17454ba952c8ba6fe0e591_w96.webp",
+        "selected": true
+      },
+      {
+        "name": "White",
+        "img_url": "https://img101.urbanic.com/v1/goods-pic/04e2486b1c17454ba952c8ba6fe0e591_w96.webp",
+        "selected": true
+      }
+    ],
+    "color_count": 2,
+    "main_color_id": "18",
+    "sub_color_id": "",
+    "pg_id": 134421,
+    "level1_category_id": "",
+    "level2_category_id": "",
+    "level3_category_id": "",
+    "scene_id": "urbanic_in_activity_rec",
+    "sell_out": "1",
+    "sku_support_sale": "true",
+    "scrape_date": "2026-05-14 12:55:11",
+    "image_downloaded": true
+  }
+]
