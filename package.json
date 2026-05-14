@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "npx prisma generate && tsx src/scripts/import-prod.ts",
+    "prebuild": "npx prisma generate",
+    "postinstall": "tsx src/scripts/import-prod.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
