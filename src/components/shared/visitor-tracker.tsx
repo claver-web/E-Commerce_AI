@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { useAuth } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
-import { v4 as uuidv4 } from "uuid";
 
 export function VisitorTracker() {
   const { userId } = useAuth();
@@ -13,7 +12,7 @@ export function VisitorTracker() {
     // 1. Get or Generate Visitor ID
     let visitorId = localStorage.getItem("visitor_id");
     if (!visitorId) {
-      visitorId = `vis_${uuidv4()}`;
+      visitorId = `vis_${crypto.randomUUID()}`;
       localStorage.setItem("visitor_id", visitorId);
     }
 

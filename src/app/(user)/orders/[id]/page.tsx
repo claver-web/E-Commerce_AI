@@ -239,7 +239,6 @@ export default function OrderDetailPage({ params }: { params: Promise<{ id: stri
                     </div>
                     <div>
                       <p className="font-bold text-sm">{step.label}</p>
-                      <p className="text-xs text-zinc-500">{step.date}</p>
                     </div>
                   </div>
                 ))}
