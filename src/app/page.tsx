@@ -47,12 +47,12 @@ export default function HomePage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-[85vh] flex items-center overflow-hidden bg-zinc-950">
+        <section className="relative min-h-[600px] h-[85vh] flex items-center overflow-hidden bg-zinc-950">
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/20 to-transparent z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-black via-black/40 to-transparent z-10" />
             <motion.div
               initial={{ scale: 1.1, opacity: 0 }}
-              animate={{ scale: 1, opacity: 0.7 }}
+              animate={{ scale: 1, opacity: 0.8 }}
               transition={{ duration: 2 }}
               className="relative h-full w-full"
             >
@@ -71,24 +71,24 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-3xl space-y-10"
+              className="max-w-3xl space-y-6 md:space-y-10"
             >
-              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600/20 backdrop-blur-md border border-blue-500/30 text-blue-400 text-sm font-bold uppercase tracking-widest">
-                <Sparkles className="h-4 w-4" />
+              <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-blue-600/20 backdrop-blur-md border border-blue-500/30 text-blue-400 text-xs md:text-sm font-bold uppercase tracking-widest">
+                <Sparkles className="h-3 w-3 md:h-4 md:w-4" />
                 <span>New Arrival: Urbanic Collection 2026</span>
               </div>
-              <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter">
+              <h1 className="text-5xl sm:text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter">
                 ELEVATE YOUR <br />
                 <span className="text-blue-600">LIFESTYLE.</span>
               </h1>
-              <p className="text-xl text-zinc-400 max-w-lg leading-relaxed">
+              <p className="text-lg md:text-xl text-zinc-400 max-w-lg leading-relaxed">
                 Discover the intersection of high-fashion and AI-driven curation. Experience shopping redefined.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-                <Link href="/products" className={cn(buttonVariants({ size: "lg" }), "bg-blue-600 hover:bg-blue-700 h-16 px-10 text-lg font-bold rounded-full transition-all hover:scale-105")}>
+                <Link href="/products" className={cn(buttonVariants({ size: "lg" }), "bg-blue-600 hover:bg-blue-700 h-14 md:h-16 px-8 md:px-10 text-base md:text-lg font-bold rounded-full transition-all hover:scale-105")}>
                   Shop Now <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <Link href="/categories" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "h-16 px-10 text-lg font-bold rounded-full bg-white/5 text-white border-white/20 hover:bg-white/10 transition-all backdrop-blur-md")}>
+                <Link href="/categories" className={cn(buttonVariants({ variant: "outline", size: "lg" }), "h-14 md:h-16 px-8 md:px-10 text-base md:text-lg font-bold rounded-full bg-white/5 text-white border-white/20 hover:bg-white/10 transition-all backdrop-blur-md")}>
                   Categories
                 </Link>
               </div>
@@ -99,24 +99,25 @@ export default function HomePage() {
         {/* Stats / Trust Banner */}
         <section className="py-10 bg-zinc-50 dark:bg-zinc-900/50 border-y border-zinc-200 dark:border-zinc-800">
           <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-between items-center gap-8">
+            <div className="grid grid-cols-2 md:flex md:flex-wrap md:justify-between items-center gap-8">
               {[
                 { icon: <Users className="h-6 w-6" />, val: "10K+", label: "Happy Customers" },
                 { icon: <Trophy className="h-6 w-6" />, val: "500+", label: "Premium Brands" },
                 { icon: <Star className="h-6 w-6" />, val: "4.9/5", label: "Average Rating" },
                 { icon: <CheckCircle2 className="h-6 w-6" />, val: "100%", label: "Secure Checkout" },
               ].map((stat, i) => (
-                <div key={i} className="flex items-center space-x-4">
-                  <div className="p-3 bg-blue-600/10 text-blue-600 rounded-2xl">{stat.icon}</div>
+                <div key={i} className="flex items-center space-x-3 md:space-x-4">
+                  <div className="p-2 md:p-3 bg-blue-600/10 text-blue-600 rounded-xl md:rounded-2xl shrink-0">{stat.icon}</div>
                   <div>
-                    <p className="text-2xl font-black leading-none">{stat.val}</p>
-                    <p className="text-xs font-bold text-zinc-500 uppercase tracking-widest">{stat.label}</p>
+                    <p className="text-xl md:text-2xl font-black leading-none">{stat.val}</p>
+                    <p className="text-[10px] md:text-xs font-bold text-zinc-500 uppercase tracking-widest">{stat.label}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
+
 
         {/* Featured Products */}
         <section className="py-24">
@@ -214,14 +215,14 @@ export default function HomePage() {
         {/* Newsletter */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="bg-zinc-900 dark:bg-blue-600 rounded-[4rem] p-12 md:p-32 text-center text-white relative overflow-hidden shadow-3xl shadow-blue-500/20">
+            <div className="bg-zinc-900 dark:bg-blue-600 rounded-[3rem] md:rounded-[4rem] p-8 sm:p-12 md:p-32 text-center text-white relative overflow-hidden shadow-3xl shadow-blue-500/20">
               <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-32 -mt-32 blur-3xl" />
               <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/20 rounded-full -ml-32 -mb-32 blur-3xl" />
               
               <div className="relative z-10 max-w-3xl mx-auto space-y-12">
                 <div className="space-y-4">
-                  <h2 className="text-5xl md:text-8xl font-black leading-none uppercase tracking-tighter">Stay Ahead</h2>
-                  <p className="text-zinc-400 dark:text-blue-100 text-xl max-w-xl mx-auto leading-relaxed">
+                  <h2 className="text-4xl sm:text-5xl md:text-8xl font-black leading-none uppercase tracking-tighter">Stay Ahead</h2>
+                  <p className="text-zinc-400 dark:text-blue-100 text-lg md:text-xl max-w-xl mx-auto leading-relaxed">
                     Join our inner circle for early access to drops, exclusive AI-curated style guides, and secret sales.
                   </p>
                 </div>
@@ -230,9 +231,9 @@ export default function HomePage() {
                   <input 
                     type="email" 
                     placeholder="your@email.com" 
-                    className="flex-grow h-16 rounded-full px-8 bg-white/5 dark:bg-white/10 border border-white/10 dark:border-white/20 backdrop-blur-xl outline-none focus:ring-2 focus:ring-white/30 transition-all placeholder:text-zinc-500 dark:placeholder:text-blue-200"
+                    className="flex-grow h-14 md:h-16 rounded-full px-8 bg-white/5 dark:bg-white/10 border border-white/10 dark:border-white/20 backdrop-blur-xl outline-none focus:ring-2 focus:ring-white/30 transition-all placeholder:text-zinc-500 dark:placeholder:text-blue-200"
                   />
-                  <Button className="h-16 px-10 rounded-full bg-white text-zinc-900 dark:text-blue-600 font-black text-lg hover:scale-105 transition-transform shadow-2xl">
+                  <Button className="h-14 md:h-16 px-10 rounded-full bg-white text-zinc-900 dark:text-blue-600 font-black text-lg hover:scale-105 transition-transform shadow-2xl">
                     Join Now
                   </Button>
                 </div>
@@ -243,6 +244,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+
       </main>
 
       <Footer />

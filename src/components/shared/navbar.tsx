@@ -174,25 +174,25 @@ export default function Navbar() {
                 <SheetHeader>
                   <SheetTitle>AI-Commerce</SheetTitle>
                 </SheetHeader>
-                <div className="mt-8 flex flex-col space-y-4">
+                <div className="mt-8 flex flex-col items-center space-y-6 text-center">
                   {NavLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
                       className={cn(
-                        "text-lg font-medium",
-                        pathname === link.href ? "text-foreground" : "text-foreground/60"
+                        "text-2xl font-bold transition-all hover:text-blue-600",
+                        pathname === link.href ? "text-blue-600" : "text-foreground/60"
                       )}
                     >
                       {link.name}
                     </Link>
                   ))}
 
-                  <div className="space-y-3">
-                    <p className="text-xs font-bold text-zinc-400 uppercase tracking-widest pt-4">Categories</p>
+                  <div className="flex flex-col items-center space-y-4 w-full">
+                    <p className="text-xs font-black text-zinc-400 uppercase tracking-[0.2em] pt-4">Collections</p>
                     <Link 
                       href="/categories" 
-                      className={cn("block text-lg font-medium", pathname === "/categories" ? "text-foreground" : "text-foreground/60")}
+                      className={cn("text-xl font-bold", pathname === "/categories" ? "text-blue-600" : "text-foreground/60")}
                     >
                       All Categories
                     </Link>
@@ -200,7 +200,7 @@ export default function Navbar() {
                       <Link
                         key={cat.name}
                         href={`/products?category=${cat.name}`}
-                        className="block text-lg font-medium text-foreground/60 capitalize"
+                        className="text-xl font-bold text-foreground/60 capitalize hover:text-blue-600 transition-colors"
                       >
                         {cat.name.replace(/_/g, ' ').replace(/-/g, ' ')}
                       </Link>
@@ -210,28 +210,29 @@ export default function Navbar() {
                     <Link
                       href="/orders"
                       className={cn(
-                        "text-lg font-medium",
-                        pathname === "/orders" ? "text-foreground" : "text-foreground/60"
+                        "text-2xl font-bold",
+                        pathname === "/orders" ? "text-blue-600" : "text-foreground/60"
                       )}
                     >
                       Orders
                     </Link>
                   )}
-                  <div className="flex flex-col space-y-2 pt-4 border-t">
+                  <div className="flex flex-col space-y-4 pt-8 border-t w-full max-w-[200px]">
                     {!userId && (
                       <>
                         <SignInButton mode="modal">
-                          <div className={cn(buttonVariants({ variant: "outline" }), "w-full cursor-pointer")}>
+                          <div className={cn(buttonVariants({ variant: "outline" }), "w-full rounded-full h-12 font-bold cursor-pointer")}>
                             Log In
                           </div>
                         </SignInButton>
                         <SignUpButton mode="modal">
-                          <div className={cn(buttonVariants({ variant: "default" }), "w-full cursor-pointer")}>Sign Up</div>
+                          <div className={cn(buttonVariants({ variant: "default" }), "w-full rounded-full h-12 font-bold cursor-pointer")}>Sign Up</div>
                         </SignUpButton>
                       </>
                     )}
                   </div>
                 </div>
+
               </SheetContent>
             </Sheet>
           </div>

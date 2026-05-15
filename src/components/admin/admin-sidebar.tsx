@@ -31,11 +31,15 @@ const menuItems = [
 
 
 
-export default function AdminSidebar() {
+export default function AdminSidebar({ onClose }: { onClose?: () => void }) {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col w-64 border-r bg-zinc-50 dark:bg-zinc-950 min-h-screen sticky top-0">
+    <div className={cn(
+      "flex flex-col border-r bg-zinc-50 dark:bg-zinc-950 min-h-screen sticky top-0",
+      onClose ? "w-full border-none" : "w-64 hidden md:flex"
+    )}>
+
       <div className="p-6">
         <Link href="/" className="flex items-center space-x-2 text-blue-600 font-bold text-xl">
           <Activity className="h-6 w-6" />
@@ -43,7 +47,10 @@ export default function AdminSidebar() {
         </Link>
       </div>
 
-      <nav className="flex-grow px-4 space-y-1">
+      <nav className={cn(
+        "flex-grow px-4 space-y-2",
+        onClose && "flex flex-col justify-center items-center space-y-4"
+      )}>
         {menuItems.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
@@ -51,36 +58,53 @@ export default function AdminSidebar() {
             <Link
               key={item.href}
               href={item.href}
+              onClick={onClose}
               className={cn(
-                "flex items-center space-x-3 px-3 py-2 rounded-lg text-sm font-medium transition-all border border-transparent",
+                "flex items-center space-x-3 px-3 py-3 rounded-xl text-sm font-medium transition-all border border-transparent w-full",
+                onClose && "justify-center text-lg py-4 max-w-xs",
                 isActive 
                   ? "bg-blue-600 text-white shadow-lg shadow-blue-500/30" 
                   : "text-zinc-600 dark:text-zinc-400 hover:bg-zinc-200 dark:hover:bg-zinc-800"
               )}
             >
-              <Icon className="h-4 w-4" />
+              <Icon className={cn("h-4 w-4", onClose && "h-6 w-6")} />
               <span>{item.name}</span>
             </Link>
           );
         })}
       </nav>
 
-      <div className="p-4 border-t border-zinc-200 dark:border-zinc-800 space-y-2">
+
+      <div className={cn(
+        "p-4 border-t border-zinc-200 dark:border-zinc-800 space-y-2",
+        onClose && "flex flex-col items-center justify-center p-8 space-y-4"
+      )}>
         <Link 
           href="/admin/settings" 
-          className={cn(buttonVariants({ variant: "ghost" }), "w-full justify-start text-zinc-600 dark:text-zinc-400")}
+          onClick={onClose}
+          className={cn(
+            buttonVariants({ variant: "ghost" }), 
+            "w-full justify-start text-zinc-600 dark:text-zinc-400",
+            onClose && "justify-center text-lg h-14 max-w-xs"
+          )}
         >
-          <Settings className="mr-2 h-4 w-4" />
+          <Settings className={cn("mr-2 h-4 w-4", onClose && "h-6 w-6")} />
           Settings
         </Link>
         <Link 
           href="/" 
-          className={cn(buttonVariants({ variant: "ghost" }), "w-full justify-start text-zinc-600 dark:text-zinc-400")}
+          onClick={onClose}
+          className={cn(
+            buttonVariants({ variant: "ghost" }), 
+            "w-full justify-start text-zinc-600 dark:text-zinc-400",
+            onClose && "justify-center text-lg h-14 max-w-xs"
+          )}
         >
-          <ArrowLeft className="mr-2 h-4 w-4" />
+          <ArrowLeft className={cn("mr-2 h-4 w-4", onClose && "h-6 w-6")} />
           Back to Shop
         </Link>
       </div>
+
     </div>
   );
 }
