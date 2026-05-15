@@ -1,12 +1,8 @@
+import "dotenv/config";
 import fs from "fs";
 import path from "path";
 import { parse } from "csv-parse/sync";
-import { PrismaClient } from "@prisma/client";
-import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
-
-const dbPath = process.env.DATABASE_URL || "file:./prisma/dev.db";
-const adapter = new PrismaBetterSqlite3({ url: dbPath });
-const prisma = new PrismaClient({ adapter });
+import { prisma } from "../lib/prisma";
 
 interface AmazonRecord {
   product_id: string;
