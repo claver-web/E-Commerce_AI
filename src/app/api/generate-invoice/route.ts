@@ -71,7 +71,7 @@ export async function POST(req: Request) {
       const blueColor = "#2563eb";
 
       // Header
-      doc.fillColor(blueColor).fontSize(24).text("AI-COMMERCE PLATFORM", { align: "right" });
+      doc.fillColor(blueColor).fontSize(24).text("PEHN-AI PLATFORM", { align: "right" });
       doc.fillColor("#444444").fontSize(10).text("Precision Hardware & Software Solutions", { align: "right" });
       doc.moveDown();
 

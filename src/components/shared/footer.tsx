@@ -57,7 +57,7 @@ export default function Footer() {
           {/* Brand and Description */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              AI-Commerce
+              Pehn-AI
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Experience the future of shopping with our AI-driven platform. Curated collections, smart recommendations, and seamless checkout.
@@ -122,15 +122,16 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4" />
-                <span>support@aicommerce.com</span>
+                <span>support@pehnai.com</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} AI-Commerce Platform. All rights reserved.
+          © {new Date().getFullYear()} Pehn-AI Platform. All rights reserved.
         </div>
+
       </div>
     </footer>
   );

@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "E-commerce AI Platform",
+  title: "Pehn-AI - Next-Generation AI E-Commerce",
   description: "Next-generation e-commerce experience powered by AI",
 };
 

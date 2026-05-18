@@ -82,7 +82,7 @@ export default function CheckoutPage() {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: orderData.amount,
         currency: orderData.currency,
-        name: "AI-Commerce Platform",
+        name: "Pehn-AI Platform",
         description: "Payment for your order",
         order_id: orderData.orderId,
         handler: async function (response: any) {
